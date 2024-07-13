@@ -1,0 +1,535 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    transition: background-color 0.3s;
+}
+
+/* Navbar with transparent background */
+.transparent-navbar {
+    background-color: transparent;
+}
+
+/* Navbar with green background */
+.green-background {
+    background-color: #004d00; /* Deep green shade */
+}
+
+/* Glowing effect */
+.glow {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+.custom-hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #004d00, transparent);
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-brand img {
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 50px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 14px;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.glowing-navbar {
+    background-color: green;
+    box-shadow: 0 0 10px green;
+}
+.join-us-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px green;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.join-us-button a {
+    color: white;
+    text-decoration: none;
+}
+.join-us-button a i {
+    margin-right: 8px;
+}
+
+.join-us-button:hover {
+    box-shadow: 0 0 20px green;
+    transform: scale(1.05);
+}
+
+.glowing-navbar {
+    background-color: green;
+    box-shadow: 0 0 10px green;
+}
+
+#welcome-address {
+    background-image: url('images/flower.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Ensure text is readable */
+    padding: 50px; /* Adjust as needed */
+    position: relative;
+
+}
+
+/* Adjustments for the welcome-address section */
+/* General styles for the welcome-address section */
+#welcome-address {
+    background-image: url('images/flower.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: green; /* Ensure text is readable */
+    padding: 50px; /* Adjust as needed */
+    position: relative;
+}
+
+/* Styles for the container inside the welcome-address section */
+#welcome-address .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styles for the image inside the container */
+#welcome-address .container img {
+    border-radius: 50%;
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+}
+
+/* Styles for the text inside the container */
+#welcome-address .container .address-text {
+    max-width: 600px; /* Adjust size as needed */
+    margin-left: 20px; /* Space between image and text */
+}
+
+/* Styles for smaller screens (mobile) */
+@media (max-width: 767px) {
+    #welcome-address {
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    #welcome-address .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+        text-align: center; /* Center-align text */
+    }
+
+    #welcome-address .container img {
+        width: 150px; /* Smaller image size for mobile */
+        height: 150px; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+    #welcome-address .container .address-text {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add margin to separate text from image */
+    }
+}
+.welcome-divider {
+    border-top: 2px solid #B0B0B0;
+    width: 100%;
+    margin-top: 30px;
+}
+.custom-hr {
+    border: 0;
+    height: 5px;
+    background: #;
+    box-shadow: 0 0 10px #;
+    margin: 0;
+}
+.locations-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.location-item {
+    margin-bottom: 30px;
+    padding: 0 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px; /* Adjust as needed */
+}
+
+.location-content {
+    position: relative;
+    height: 100%
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: none; /* Semi-transparent background for readability */
+    text-align: center;
+    color: #E7D37F !important;
+    font-weight: bold;
+    font-size: 1.9rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 576px) {
+    .location-item {
+        margin-bottom: 30px;
+    }
+}
+
+.location-item .location-content p {
+    color: #E7D37F; /* Change to desired color */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.location-content h3 {
+    margin-top: 10px;
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+
+}
+.locations-section h2 {
+    color: #004d00;
+}
+
+.locations-section p {
+    font-size: 16px;
+}
+.location-item .location-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); /* Darkens the image */
+    z-index: 1;
+}
+
+.location-item .location-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+}
+.learn-more {
+    margin: 10px auto;
+    padding: 8px 16px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 200px;
+    text-align: center;
+
+}
+.learn-more:hover {
+    background-color: darkgreen;
+}
+/* Initial state of the navbar */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar with transparent background */
+.transparent-navbar {
+    background-color: transparent;
+}
+.brand-name {
+  color: white;
+  font-style: italic;
+  font-size: bold;
+}
+
+
+/* Navbar with green background */
+.green-background {
+    background-color: #004d00; /* Deep green shade */
+}
+
+/* Glowing effect */
+.glow {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Styling for hr line */
+.custom-hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #004d00, transparent);
+}
+
+.upcoming-events-section {
+    background-color: #F3E5AB; /* Butter color background */
+    padding: 50px 0;
+}
+
+.event-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; /* Dark background for carousel controls */
+    border-radius: 50%;
+}
+
+/* General styling for the values-section */
+.values-section .value-item {
+    padding: 20px; /* Ensure content is contained within the divs */
+    background-color: green; /* Example background color */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 50px; /* Adds space between the divs */
+    max-width: 50%;
+    text-align: center;
+}
+
+/* Specific styling for the "My Confession-2024" div */
+.values-section .value-item.confession {
+    background-color: green; /* Ensure background color consistency */
+    color: yellow; /* Yellow text color for this specific div */
+    max-width: 100%;
+}
+
+
+/* Adjustments for mobile devices */
+@media (max-width: 767px) {
+    .values-section .value-item {
+        width: 100%; /* Makes the divs full width on mobile */
+        margin-bottom: 20px; /* Adds space between the divs */
+        box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+    }
+}
+
+
+.value-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.value-item p {
+    font-size: 1rem;
+}
+
+/* Specific styling for "My Confession - 2024" */
+.confession-item p {
+    color: #FFD700; /* Yellow text color */
+}
+
+.footer {
+    background-color:  #333; /* Deep green background */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222; /* Slightly darker green for contrast */
+    color: #fff;
+}
+.footer-section i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #fff; /* Icon color */
+}
+
+.footer-section p {
+    margin-bottom: 10px; /* Space between paragraphs */
+    font-size: 16px; /* Adjust as needed */
+}
+/* navbar/brand name mobile adjustment */
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 15px; /* Adjust font size as needed */
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-brand img {
+        height: 40px; /* Adjust height of the logo image if needed */
+        margin-right: 5px;
+    }
+    .brand-name {
+      color: white;
+      font-style: italic;
+      font-size: bold;
+      padding-right: 50px;
+    }
+}
+ /* video background mobile compatibility. */
+@media (max-width: 767px) {
+    .video-background {
+        height: 600px; /* Adjust height to auto for better mobile compatibility */
+    }
+
+    .video-background video {
+        width: 100%;
+        height: 600px; /* Adjust height to auto for better aspect ratio maintenance */
+    }
+
+    .video-content {
+        padding: 20px; /* Add padding for better spacing on mobile screens */
+        text-align: center; /* Center align the text */
+    }
+
+    .video-content h1 {
+        font-size: 24px; /* Adjust font size for better readability on mobile */
+    }
+
+    .video-content p {
+        font-size: 16px; /* Adjust font size for better readability on mobile */
+    }
+
+    .join-us-button {
+        font-size: 14px; /* Adjust font size for better readability on mobile */
+        padding: 10px 20px; /* Adjust padding for better spacing on mobile */
+    }
+}
+/* Values section mobile adjustments */
+@media (max-width: 767px) {
+    .values-section .value-item {
+        width: 100%; /* Makes the divs full width on mobile */
+        margin-bottom: 20px; /* Adds space between the divs */
+        box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+    }
+
+    .values-section .value-item h3 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .values-section .value-item p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+}
+
+/* Adjustments for mobile devices for location section */
+@media (max-width: 767px) {
+    .location-item {
+        margin-bottom: 20px;
+        padding: 0 70px;
+    }
+
+    .location-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .location-content p {
+        font-size: 1rem;
+    }
+
+    .learn-more {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+h2{
+  text-align: center;
+  color: green;
+}
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+}
